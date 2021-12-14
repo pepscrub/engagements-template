@@ -49,7 +49,7 @@ function logging(tokens, req, res) {
     }
 
     return [
-        color.bold.blue('[nodeJS]'),
+        color.bold.blue('[Server]'),
         req.ip,
         method(),
         status(),

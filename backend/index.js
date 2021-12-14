@@ -14,7 +14,7 @@ const ws = expressWs(app);
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, ()=>
 {
-    console.log(color.blue.bold(`[nodeJS]`), `Server is listening on port: ${PORT}`);
+    console.log(color.blue.bold(`[Server]`), `Server is listening on port: ${PORT}`);
 })
 
 app.set('trust proxy', 1);

@@ -26,6 +26,7 @@ router.get('/', (req,res, next)=>{
 router.use('/clients', clients);
 router.use('/employees', employees);
 router.use('/engagements', engagements);
+router.get('/websocket', (req,res,next)=>next(new Error(`Do not ${req.method} this endpoint`)))
 router.ws('/websocket', ws)
 
 
